@@ -1,6 +1,24 @@
 {
-  "globalstrict": true,
+  "strict": "global",
   "globals": {
-    "angular": false
+    // AngularJS
+    "angular": false,
+
+    // AngularJS mocks
+    "module": false,
+    "inject": false,
+
+    // Jasmine
+    "jasmine": false,
+    "describe": false,
+    "beforeEach": false,
+    "afterEach": false,
+    "it": false,
+    "expect": false,
+
+    // Protractor
+    "browser": false,
+    "element": false,
+    "by": false
   }
 }

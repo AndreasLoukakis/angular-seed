@@ -1,12 +1,12 @@
 'use strict';
 
-/* https://github.com/angular/protractor/blob/master/docs/getting-started.md */
+/* https://github.com/angular/protractor/blob/master/docs/toc.md */
 
 describe('my app', function() {
 
-  browser.get('index.html');
 
   it('should automatically redirect to /view1 when location hash/fragment is empty', function() {
+    browser.get('index.html');
     expect(browser.getLocationAbsUrl()).toMatch("/view1");
   });
 
@@ -14,7 +14,7 @@ describe('my app', function() {
   describe('view1', function() {
 
     beforeEach(function() {
-      browser.get('index.html#/view1');
+      browser.get('index.html#!/view1');
     });
 
 
@@ -29,7 +29,7 @@ describe('my app', function() {
   describe('view2', function() {
 
     beforeEach(function() {
-      browser.get('index.html#/view2');
+      browser.get('index.html#!/view2');
     });
 
 
